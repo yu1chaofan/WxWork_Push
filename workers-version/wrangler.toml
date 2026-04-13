@@ -1,0 +1,24 @@
+name = "wxwork-push"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# 环境变量配置 (部署时通过 --var 或 Cloudflare Dashboard 设置)
+# 不要在此文件中直接填写敏感信息！
+# 
+# 必需的环境变量:
+# - CORPID: 企业微信 CorpID
+# - SECRET: 企业微信应用 Secret
+# - AGENTID: 企业微信应用 AgentID
+# 
+# 可选的环境变量:
+# - ACCESS_KEY: 访问密钥 (如果设置，则所有请求必须携带?key=参数)
+#
+# 示例部署命令:
+# wrangler deploy --var CORPID:your_corpid --var SECRET:your_secret --var AGENTID:your_agentid --var ACCESS_KEY:your_access_key
+#
+# 或在 Cloudflare Dashboard 中设置:
+# Workers & Pages -> 选择 Worker -> Settings -> Variables -> Environment Variables
+
+[vars]
+# 这里可以设置非敏感的配置变量
+# 敏感信息请使用 wrangler deploy --var 或 Dashboard 设置
